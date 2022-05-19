@@ -6,25 +6,25 @@ import fetch from 'isomorphic-fetch';
 // React Components
 import Link from 'next/link';
 import Head from 'next/head';
-import NoDocs from '../components/no-docs';
+import NoDocs from '../../components/no-docs';
 import Markdown from 'react-markdown';
-import MarkdownCode from '../components/code';
-import MarkdownImage from '../components/image';
-import MarkdownLink from '../components/link';
-import MarkdownText from '../components/text';
+import MarkdownCode from '../../components/code';
+import MarkdownImage from '../../components/image';
+import MarkdownLink from '../../components/link';
+import MarkdownText from '../../components/text';
 
 // Icons
-import Vercel from '../components/icons/vercel';
-import Arrow from '../components/icons/arrow';
-import GitHub from '../components/icons/github';
-import Logotype from '../components/icons/import';
+import Vercel from '../../components/icons/vercel';
+import Arrow from '../../components/icons/arrow';
+import GitHub from '../../components/icons/github';
+import Logotype from '../../components/icons/import';
 
 // Resolution logic
-import redirect from '../lib/redirect';
-import resolveImport from '../lib/resolve';
-import toURL from '../lib/to-github-raw-url';
-import parseCommittish from '../lib/parse-committish';
-import parseImportPath from '../lib/parse-import-path';
+import redirect from '../../lib/redirect';
+import resolveImport from '../../lib/resolve';
+import toURL from '../../lib/to-github-raw-url';
+import parseCommittish from '../../lib/parse-committish';
+import parseImportPath from '../../lib/parse-import-path';
 
 const resolveOpts = {
 	defaultOrg: 'importpw',
