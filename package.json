@@ -1,0 +1,37 @@
+{
+  "name": "import-server-working",
+  "version": "1.0.0",
+  "description": "Redirects to GitHub repo raw URLs for use with `import`",
+  "author": "Nathan Rajlich <n@n8.io>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/importpw/import-server.git"
+  },
+  "scripts": {
+    "dev": "concurrently \"next dev\" \"cd ./api/og && npm run vercel-build\"",
+    "build": "next build"
+  },
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "emoji-dictionary": "1.0.11",
+    "github-api": "3.4.0",
+    "isomorphic-fetch": "3.0.0",
+    "next": "12.1.5",
+    "parse-ansi": "1.0.3",
+    "parse-github-url": "1.0.2",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-inspector": "5.1.1",
+    "react-markdown": "8.0.3",
+    "react-new-window": "0.2.1",
+    "react-syntax-highlighter": "15.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.30",
+    "@types/react": "18.0.8",
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.5",
+    "typescript": "4.6.4"
+  }
+}
