@@ -39,7 +39,7 @@ const resolveOpts = {
  *   - file - file name to load
  *   - committish - commit ref / tag / branch
  */
-export default class IndexPage extends React.Component {
+export default class HelloPage extends React.Component {
 	static async getInitialProps({ req, res, query, asPath }) {
 		const parsed = parseImportPath(asPath);
 		parseCommittish(parsed);
@@ -250,7 +250,7 @@ export default class IndexPage extends React.Component {
 				</div>
 
 				<div className="content">
-					<h1 className="title">echo `&apos;`,hello servingtokens world!`&apos;`,</h1>
+					<h1 className="title">echo &apos;,hello servingtokens world!&apos;,</h1>
 					
 					{content}
 				</div>

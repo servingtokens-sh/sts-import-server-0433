@@ -250,7 +250,7 @@ export default class IndexPage extends React.Component {
 				</div>
 
 				<div className="content">
-					<h1 className="title">echo `&apos;`,hello servingtokens world!`&apos;`,</h1>
+					<h1 className="title">echo &apos;,hello servingtokens world!&apos;,</h1>
 					
 					{content}
 				</div>
